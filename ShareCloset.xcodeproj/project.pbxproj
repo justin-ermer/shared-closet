@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A28A2961F76B3D2202ED6C45 /* libPods-ShareCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D20755C323F91A672DF7523D /* libPods-ShareCloset.a */; };
+		A96DB3131E8F551B000DF63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3121E8F551B000DF63C /* main.m */; };
+		A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3151E8F551B000DF63C /* AppDelegate.m */; };
+		A96DB3191E8F551B000DF63C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3181E8F551B000DF63C /* FirstViewController.m */; };
+		A96DB31C1E8F551B000DF63C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB31B1E8F551B000DF63C /* SecondViewController.m */; };
+		A96DB31F1E8F551B000DF63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96DB31D1E8F551B000DF63C /* Main.storyboard */; };
+		A96DB3211E8F551B000DF63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96DB3201E8F551B000DF63C /* Assets.xcassets */; };
+		A96DB3241E8F551B000DF63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96DB3221E8F551B000DF63C /* LaunchScreen.storyboard */; };
+		A96DB32F1E8F551B000DF63C /* ShareClosetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB32E1E8F551B000DF63C /* ShareClosetTests.m */; };
+		A96DB33C1E8F6E16000DF63C /* SCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB33B1E8F6E16000DF63C /* SCSearchViewController.m */; };
+		A96DB33F1E8F6E35000DF63C /* SCArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB33E1E8F6E35000DF63C /* SCArticleDetailViewController.m */; };
+		A96DB3421E8F6E53000DF63C /* SCCreateArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3411E8F6E53000DF63C /* SCCreateArticleViewController.m */; };
+		A96DB3451E8F6EE4000DF63C /* SCArticleGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3441E8F6EE4000DF63C /* SCArticleGalleryViewController.m */; };
+		A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3471E8F6F2F000DF63C /* SCCreateProfileViewController.m */; };
+		A96DB34B1E8F6F94000DF63C /* SCLandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */; };
+		A96DB34E1E8F7206000DF63C /* SCConversationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */; };
+		A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */; };
+		A96DB35B1E9074FF000DF63C /* SCConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */; };
+		A96DB35E1E907530000DF63C /* SCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB35D1E907530000DF63C /* SCChatViewController.m */; };
+		B01F279DD47C7E19C7C3D07B /* libPods-ShareClosetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38049F47C9992F7FC897ECC1 /* libPods-ShareClosetTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A96DB32B1E8F551B000DF63C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96DB3061E8F551A000DF63C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96DB30D1E8F551B000DF63C;
+			remoteInfo = ShareCloset;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E1AC3D724DA23D7F43CE047 /* Pods-ShareCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.release.xcconfig"; sourceTree = "<group>"; };
+		30032C7133AB8D93AD4031E3 /* Pods-ShareClosetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.release.xcconfig"; sourceTree = "<group>"; };
+		38049F47C9992F7FC897ECC1 /* libPods-ShareClosetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareClosetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		390605BCFF206E537839BBC4 /* Pods-ShareClosetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9614C18684A9CA813B65A8BB /* Pods-ShareCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.debug.xcconfig"; sourceTree = "<group>"; };
+		A96DB30E1E8F551B000DF63C /* ShareCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96DB3121E8F551B000DF63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A96DB3141E8F551B000DF63C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A96DB3151E8F551B000DF63C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A96DB3171E8F551B000DF63C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		A96DB3181E8F551B000DF63C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A96DB31A1E8F551B000DF63C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A96DB31B1E8F551B000DF63C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A96DB31E1E8F551B000DF63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A96DB3201E8F551B000DF63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A96DB3231E8F551B000DF63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A96DB3251E8F551B000DF63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A96DB32A1E8F551B000DF63C /* ShareClosetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareClosetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96DB32E1E8F551B000DF63C /* ShareClosetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareClosetTests.m; sourceTree = "<group>"; };
+		A96DB3301E8F551B000DF63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A96DB33A1E8F6E16000DF63C /* SCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSearchViewController.h; sourceTree = "<group>"; };
+		A96DB33B1E8F6E16000DF63C /* SCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSearchViewController.m; sourceTree = "<group>"; };
+		A96DB33D1E8F6E35000DF63C /* SCArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCArticleDetailViewController.h; sourceTree = "<group>"; };
+		A96DB33E1E8F6E35000DF63C /* SCArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCArticleDetailViewController.m; sourceTree = "<group>"; };
+		A96DB3401E8F6E53000DF63C /* SCCreateArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCreateArticleViewController.h; sourceTree = "<group>"; };
+		A96DB3411E8F6E53000DF63C /* SCCreateArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCreateArticleViewController.m; sourceTree = "<group>"; };
+		A96DB3431E8F6EE4000DF63C /* SCArticleGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCArticleGalleryViewController.h; sourceTree = "<group>"; };
+		A96DB3441E8F6EE4000DF63C /* SCArticleGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCArticleGalleryViewController.m; sourceTree = "<group>"; };
+		A96DB3461E8F6F2F000DF63C /* SCCreateProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCreateProfileViewController.h; sourceTree = "<group>"; };
+		A96DB3471E8F6F2F000DF63C /* SCCreateProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCreateProfileViewController.m; sourceTree = "<group>"; };
+		A96DB3491E8F6F94000DF63C /* SCLandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLandingPageViewController.h; sourceTree = "<group>"; };
+		A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLandingPageViewController.m; sourceTree = "<group>"; };
+		A96DB34C1E8F7206000DF63C /* SCConversationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConversationsViewController.h; sourceTree = "<group>"; };
+		A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConversationsViewController.m; sourceTree = "<group>"; };
+		A96DB3531E8F851F000DF63C /* SCGalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		A96DB3591E9074FF000DF63C /* SCConversationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConversationTableViewCell.h; sourceTree = "<group>"; };
+		A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConversationTableViewCell.m; sourceTree = "<group>"; };
+		A96DB35C1E907530000DF63C /* SCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChatViewController.h; sourceTree = "<group>"; };
+		A96DB35D1E907530000DF63C /* SCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChatViewController.m; sourceTree = "<group>"; };
+		D20755C323F91A672DF7523D /* libPods-ShareCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A96DB30B1E8F551B000DF63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28A2961F76B3D2202ED6C45 /* libPods-ShareCloset.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96DB3271E8F551B000DF63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01F279DD47C7E19C7C3D07B /* libPods-ShareClosetTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC1DA1EA4B817303E0E9A7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D20755C323F91A672DF7523D /* libPods-ShareCloset.a */,
+				38049F47C9992F7FC897ECC1 /* libPods-ShareClosetTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A96DB3051E8F551A000DF63C = {
+			isa = PBXGroup;
+			children = (
+				A96DB3101E8F551B000DF63C /* ShareCloset */,
+				A96DB32D1E8F551B000DF63C /* ShareClosetTests */,
+				A96DB30F1E8F551B000DF63C /* Products */,
+				C77A3471D20C91C6460E73AB /* Pods */,
+				3DC1DA1EA4B817303E0E9A7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A96DB30F1E8F551B000DF63C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A96DB30E1E8F551B000DF63C /* ShareCloset.app */,
+				A96DB32A1E8F551B000DF63C /* ShareClosetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A96DB3101E8F551B000DF63C /* ShareCloset */ = {
+			isa = PBXGroup;
+			children = (
+				A96DB3521E8F84F8000DF63C /* Views */,
+				A96DB3391E8F6DCB000DF63C /* View Controllers */,
+				A96DB3141E8F551B000DF63C /* AppDelegate.h */,
+				A96DB3151E8F551B000DF63C /* AppDelegate.m */,
+				A96DB3171E8F551B000DF63C /* FirstViewController.h */,
+				A96DB3181E8F551B000DF63C /* FirstViewController.m */,
+				A96DB31A1E8F551B000DF63C /* SecondViewController.h */,
+				A96DB31B1E8F551B000DF63C /* SecondViewController.m */,
+				A96DB31D1E8F551B000DF63C /* Main.storyboard */,
+				A96DB3201E8F551B000DF63C /* Assets.xcassets */,
+				A96DB3221E8F551B000DF63C /* LaunchScreen.storyboard */,
+				A96DB3251E8F551B000DF63C /* Info.plist */,
+				A96DB3111E8F551B000DF63C /* Supporting Files */,
+			);
+			path = ShareCloset;
+			sourceTree = "<group>";
+		};
+		A96DB3111E8F551B000DF63C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A96DB3121E8F551B000DF63C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A96DB32D1E8F551B000DF63C /* ShareClosetTests */ = {
+			isa = PBXGroup;
+			children = (
+				A96DB32E1E8F551B000DF63C /* ShareClosetTests.m */,
+				A96DB3301E8F551B000DF63C /* Info.plist */,
+			);
+			path = ShareClosetTests;
+			sourceTree = "<group>";
+		};
+		A96DB3391E8F6DCB000DF63C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A96DB33A1E8F6E16000DF63C /* SCSearchViewController.h */,
+				A96DB33B1E8F6E16000DF63C /* SCSearchViewController.m */,
+				A96DB33D1E8F6E35000DF63C /* SCArticleDetailViewController.h */,
+				A96DB33E1E8F6E35000DF63C /* SCArticleDetailViewController.m */,
+				A96DB3401E8F6E53000DF63C /* SCCreateArticleViewController.h */,
+				A96DB3411E8F6E53000DF63C /* SCCreateArticleViewController.m */,
+				A96DB3431E8F6EE4000DF63C /* SCArticleGalleryViewController.h */,
+				A96DB3441E8F6EE4000DF63C /* SCArticleGalleryViewController.m */,
+				A96DB3461E8F6F2F000DF63C /* SCCreateProfileViewController.h */,
+				A96DB3471E8F6F2F000DF63C /* SCCreateProfileViewController.m */,
+				A96DB3491E8F6F94000DF63C /* SCLandingPageViewController.h */,
+				A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */,
+				A96DB34C1E8F7206000DF63C /* SCConversationsViewController.h */,
+				A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */,
+				A96DB35C1E907530000DF63C /* SCChatViewController.h */,
+				A96DB35D1E907530000DF63C /* SCChatViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A96DB3521E8F84F8000DF63C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A96DB3531E8F851F000DF63C /* SCGalleryCollectionViewCell.h */,
+				A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */,
+				A96DB3591E9074FF000DF63C /* SCConversationTableViewCell.h */,
+				A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C77A3471D20C91C6460E73AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9614C18684A9CA813B65A8BB /* Pods-ShareCloset.debug.xcconfig */,
+				1E1AC3D724DA23D7F43CE047 /* Pods-ShareCloset.release.xcconfig */,
+				390605BCFF206E537839BBC4 /* Pods-ShareClosetTests.debug.xcconfig */,
+				30032C7133AB8D93AD4031E3 /* Pods-ShareClosetTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A96DB30D1E8F551B000DF63C /* ShareCloset */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96DB3331E8F551B000DF63C /* Build configuration list for PBXNativeTarget "ShareCloset" */;
+			buildPhases = (
+				9A1B65E272345C6D63D3B65D /* [CP] Check Pods Manifest.lock */,
+				A96DB30A1E8F551B000DF63C /* Sources */,
+				A96DB30B1E8F551B000DF63C /* Frameworks */,
+				A96DB30C1E8F551B000DF63C /* Resources */,
+				D7A1AB1936DB7547A38ECC29 /* [CP] Embed Pods Frameworks */,
+				03914F5ACD27F1732FFD6F6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareCloset;
+			productName = ShareCloset;
+			productReference = A96DB30E1E8F551B000DF63C /* ShareCloset.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A96DB3291E8F551B000DF63C /* ShareClosetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96DB3361E8F551B000DF63C /* Build configuration list for PBXNativeTarget "ShareClosetTests" */;
+			buildPhases = (
+				122558D25A46527836B6B8A6 /* [CP] Check Pods Manifest.lock */,
+				A96DB3261E8F551B000DF63C /* Sources */,
+				A96DB3271E8F551B000DF63C /* Frameworks */,
+				A96DB3281E8F551B000DF63C /* Resources */,
+				2E5BCF5620FA342A1B5B588E /* [CP] Embed Pods Frameworks */,
+				15BF48D3C4DDC3C1E95414D6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A96DB32C1E8F551B000DF63C /* PBXTargetDependency */,
+			);
+			name = ShareClosetTests;
+			productName = ShareClosetTests;
+			productReference = A96DB32A1E8F551B000DF63C /* ShareClosetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A96DB3061E8F551A000DF63C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Justin Ermer";
+				TargetAttributes = {
+					A96DB30D1E8F551B000DF63C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DUC5W8UNF5;
+						ProvisioningStyle = Automatic;
+					};
+					A96DB3291E8F551B000DF63C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DUC5W8UNF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A96DB30D1E8F551B000DF63C;
+					};
+				};
+			};
+			buildConfigurationList = A96DB3091E8F551A000DF63C /* Build configuration list for PBXProject "ShareCloset" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A96DB3051E8F551A000DF63C;
+			productRefGroup = A96DB30F1E8F551B000DF63C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A96DB30D1E8F551B000DF63C /* ShareCloset */,
+				A96DB3291E8F551B000DF63C /* ShareClosetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A96DB30C1E8F551B000DF63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96DB3241E8F551B000DF63C /* LaunchScreen.storyboard in Resources */,
+				A96DB3211E8F551B000DF63C /* Assets.xcassets in Resources */,
+				A96DB31F1E8F551B000DF63C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96DB3281E8F551B000DF63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03914F5ACD27F1732FFD6F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		122558D25A46527836B6B8A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15BF48D3C4DDC3C1E95414D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E5BCF5620FA342A1B5B588E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1B65E272345C6D63D3B65D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7A1AB1936DB7547A38ECC29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A96DB30A1E8F551B000DF63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96DB3451E8F6EE4000DF63C /* SCArticleGalleryViewController.m in Sources */,
+				A96DB31C1E8F551B000DF63C /* SecondViewController.m in Sources */,
+				A96DB34E1E8F7206000DF63C /* SCConversationsViewController.m in Sources */,
+				A96DB3421E8F6E53000DF63C /* SCCreateArticleViewController.m in Sources */,
+				A96DB35B1E9074FF000DF63C /* SCConversationTableViewCell.m in Sources */,
+				A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */,
+				A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */,
+				A96DB33F1E8F6E35000DF63C /* SCArticleDetailViewController.m in Sources */,
+				A96DB35E1E907530000DF63C /* SCChatViewController.m in Sources */,
+				A96DB3191E8F551B000DF63C /* FirstViewController.m in Sources */,
+				A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */,
+				A96DB3131E8F551B000DF63C /* main.m in Sources */,
+				A96DB33C1E8F6E16000DF63C /* SCSearchViewController.m in Sources */,
+				A96DB34B1E8F6F94000DF63C /* SCLandingPageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96DB3261E8F551B000DF63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96DB32F1E8F551B000DF63C /* ShareClosetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A96DB32C1E8F551B000DF63C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A96DB30D1E8F551B000DF63C /* ShareCloset */;
+			targetProxy = A96DB32B1E8F551B000DF63C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A96DB31D1E8F551B000DF63C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A96DB31E1E8F551B000DF63C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A96DB3221E8F551B000DF63C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A96DB3231E8F551B000DF63C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A96DB3311E8F551B000DF63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A96DB3321E8F551B000DF63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A96DB3341E8F551B000DF63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9614C18684A9CA813B65A8BB /* Pods-ShareCloset.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DUC5W8UNF5;
+				INFOPLIST_FILE = ShareCloset/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"Bolts\"",
+					"-l\"JSQMessagesViewController\"",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-l\"KIF\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Parse\"",
+					"-l\"ParseUI\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IOKit\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"-weak_framework",
+					"\"Social\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jermer.ShareCloset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A96DB3351E8F551B000DF63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1AC3D724DA23D7F43CE047 /* Pods-ShareCloset.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DUC5W8UNF5;
+				INFOPLIST_FILE = ShareCloset/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"Bolts\"",
+					"-l\"JSQMessagesViewController\"",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-l\"KIF\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Parse\"",
+					"-l\"ParseUI\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IOKit\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"-weak_framework",
+					"\"Social\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jermer.ShareCloset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A96DB3371E8F551B000DF63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390605BCFF206E537839BBC4 /* Pods-ShareClosetTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DUC5W8UNF5;
+				INFOPLIST_FILE = ShareClosetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jermer.ShareClosetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareCloset.app/ShareCloset";
+			};
+			name = Debug;
+		};
+		A96DB3381E8F551B000DF63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30032C7133AB8D93AD4031E3 /* Pods-ShareClosetTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DUC5W8UNF5;
+				INFOPLIST_FILE = ShareClosetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jermer.ShareClosetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareCloset.app/ShareCloset";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A96DB3091E8F551A000DF63C /* Build configuration list for PBXProject "ShareCloset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96DB3311E8F551B000DF63C /* Debug */,
+				A96DB3321E8F551B000DF63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96DB3331E8F551B000DF63C /* Build configuration list for PBXNativeTarget "ShareCloset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96DB3341E8F551B000DF63C /* Debug */,
+				A96DB3351E8F551B000DF63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96DB3361E8F551B000DF63C /* Build configuration list for PBXNativeTarget "ShareClosetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96DB3371E8F551B000DF63C /* Debug */,
+				A96DB3381E8F551B000DF63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A96DB3061E8F551A000DF63C /* Project object */;
+}
