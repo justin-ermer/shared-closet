@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A28A2961F76B3D2202ED6C45 /* libPods-ShareCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D20755C323F91A672DF7523D /* libPods-ShareCloset.a */; };
+		0D0D0A27D51BB1D73F913F37 /* libPods-ShareClosetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48B037F92AA47FAC0C26549 /* libPods-ShareClosetTests.a */; };
+		59AD3FBE971B12D5CC613315 /* libPods-ShareCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FB0834BF80A470632C52D6 /* libPods-ShareCloset.a */; };
 		A96DB3131E8F551B000DF63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3121E8F551B000DF63C /* main.m */; };
 		A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3151E8F551B000DF63C /* AppDelegate.m */; };
 		A96DB3191E8F551B000DF63C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3181E8F551B000DF63C /* FirstViewController.m */; };
@@ -25,8 +26,6 @@
 		A96DB34E1E8F7206000DF63C /* SCConversationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */; };
 		A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */; };
 		A96DB35B1E9074FF000DF63C /* SCConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */; };
-		A96DB35E1E907530000DF63C /* SCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB35D1E907530000DF63C /* SCChatViewController.m */; };
-		B01F279DD47C7E19C7C3D07B /* libPods-ShareClosetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38049F47C9992F7FC897ECC1 /* libPods-ShareClosetTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E1AC3D724DA23D7F43CE047 /* Pods-ShareCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.release.xcconfig"; sourceTree = "<group>"; };
-		30032C7133AB8D93AD4031E3 /* Pods-ShareClosetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.release.xcconfig"; sourceTree = "<group>"; };
-		38049F47C9992F7FC897ECC1 /* libPods-ShareClosetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareClosetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		390605BCFF206E537839BBC4 /* Pods-ShareClosetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9614C18684A9CA813B65A8BB /* Pods-ShareCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.debug.xcconfig"; sourceTree = "<group>"; };
+		5D49715819CBD216EC1E8250 /* Pods-ShareCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.release.xcconfig"; sourceTree = "<group>"; };
+		75FB0834BF80A470632C52D6 /* libPods-ShareCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B41B8CECC505E6784C56979 /* Pods-ShareClosetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CA82957EC0239E92328E535 /* Pods-ShareCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.debug.xcconfig"; sourceTree = "<group>"; };
 		A96DB30E1E8F551B000DF63C /* ShareCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96DB3121E8F551B000DF63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A96DB3141E8F551B000DF63C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +76,8 @@
 		A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGalleryCollectionViewCell.m; sourceTree = "<group>"; };
 		A96DB3591E9074FF000DF63C /* SCConversationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConversationTableViewCell.h; sourceTree = "<group>"; };
 		A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConversationTableViewCell.m; sourceTree = "<group>"; };
-		A96DB35C1E907530000DF63C /* SCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChatViewController.h; sourceTree = "<group>"; };
-		A96DB35D1E907530000DF63C /* SCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChatViewController.m; sourceTree = "<group>"; };
-		D20755C323F91A672DF7523D /* libPods-ShareCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48B037F92AA47FAC0C26549 /* libPods-ShareClosetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareClosetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9188110A3B424806971FFC /* Pods-ShareClosetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A28A2961F76B3D2202ED6C45 /* libPods-ShareCloset.a in Frameworks */,
+				59AD3FBE971B12D5CC613315 /* libPods-ShareCloset.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01F279DD47C7E19C7C3D07B /* libPods-ShareClosetTests.a in Frameworks */,
+				0D0D0A27D51BB1D73F913F37 /* libPods-ShareClosetTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +103,8 @@
 		3DC1DA1EA4B817303E0E9A7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D20755C323F91A672DF7523D /* libPods-ShareCloset.a */,
-				38049F47C9992F7FC897ECC1 /* libPods-ShareClosetTests.a */,
+				75FB0834BF80A470632C52D6 /* libPods-ShareCloset.a */,
+				C48B037F92AA47FAC0C26549 /* libPods-ShareClosetTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,8 +115,8 @@
 				A96DB3101E8F551B000DF63C /* ShareCloset */,
 				A96DB32D1E8F551B000DF63C /* ShareClosetTests */,
 				A96DB30F1E8F551B000DF63C /* Products */,
-				C77A3471D20C91C6460E73AB /* Pods */,
 				3DC1DA1EA4B817303E0E9A7A /* Frameworks */,
+				D9CDD21283A9E57BDAC76BAC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,8 +183,6 @@
 				A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */,
 				A96DB34C1E8F7206000DF63C /* SCConversationsViewController.h */,
 				A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */,
-				A96DB35C1E907530000DF63C /* SCChatViewController.h */,
-				A96DB35D1E907530000DF63C /* SCChatViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -203,13 +198,13 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		C77A3471D20C91C6460E73AB /* Pods */ = {
+		D9CDD21283A9E57BDAC76BAC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9614C18684A9CA813B65A8BB /* Pods-ShareCloset.debug.xcconfig */,
-				1E1AC3D724DA23D7F43CE047 /* Pods-ShareCloset.release.xcconfig */,
-				390605BCFF206E537839BBC4 /* Pods-ShareClosetTests.debug.xcconfig */,
-				30032C7133AB8D93AD4031E3 /* Pods-ShareClosetTests.release.xcconfig */,
+				7CA82957EC0239E92328E535 /* Pods-ShareCloset.debug.xcconfig */,
+				5D49715819CBD216EC1E8250 /* Pods-ShareCloset.release.xcconfig */,
+				7B41B8CECC505E6784C56979 /* Pods-ShareClosetTests.debug.xcconfig */,
+				EF9188110A3B424806971FFC /* Pods-ShareClosetTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -221,12 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A96DB3331E8F551B000DF63C /* Build configuration list for PBXNativeTarget "ShareCloset" */;
 			buildPhases = (
-				9A1B65E272345C6D63D3B65D /* [CP] Check Pods Manifest.lock */,
+				B309DEC9DC35585A16CF7155 /* [CP] Check Pods Manifest.lock */,
 				A96DB30A1E8F551B000DF63C /* Sources */,
 				A96DB30B1E8F551B000DF63C /* Frameworks */,
 				A96DB30C1E8F551B000DF63C /* Resources */,
-				D7A1AB1936DB7547A38ECC29 /* [CP] Embed Pods Frameworks */,
-				03914F5ACD27F1732FFD6F6A /* [CP] Copy Pods Resources */,
+				EEEE236D3571AFA10919D89C /* [CP] Embed Pods Frameworks */,
+				3AD0E4E4ED8598DEBCD76BDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,12 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A96DB3361E8F551B000DF63C /* Build configuration list for PBXNativeTarget "ShareClosetTests" */;
 			buildPhases = (
-				122558D25A46527836B6B8A6 /* [CP] Check Pods Manifest.lock */,
+				86D3F1E6E2547EA647221C4E /* [CP] Check Pods Manifest.lock */,
 				A96DB3261E8F551B000DF63C /* Sources */,
 				A96DB3271E8F551B000DF63C /* Frameworks */,
 				A96DB3281E8F551B000DF63C /* Resources */,
-				2E5BCF5620FA342A1B5B588E /* [CP] Embed Pods Frameworks */,
-				15BF48D3C4DDC3C1E95414D6 /* [CP] Copy Pods Resources */,
+				E9C9F568968F51C0287BCDA0 /* [CP] Embed Pods Frameworks */,
+				C9A93E23808E9B163D73FC81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,7 +315,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03914F5ACD27F1732FFD6F6A /* [CP] Copy Pods Resources */ = {
+		3AD0E4E4ED8598DEBCD76BDB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,7 +330,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		122558D25A46527836B6B8A6 /* [CP] Check Pods Manifest.lock */ = {
+		86D3F1E6E2547EA647221C4E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,10 +342,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		15BF48D3C4DDC3C1E95414D6 /* [CP] Copy Pods Resources */ = {
+		B309DEC9DC35585A16CF7155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A93E23808E9B163D73FC81 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,7 +375,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E5BCF5620FA342A1B5B588E /* [CP] Embed Pods Frameworks */ = {
+		E9C9F568968F51C0287BCDA0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,22 +390,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A1B65E272345C6D63D3B65D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D7A1AB1936DB7547A38ECC29 /* [CP] Embed Pods Frameworks */ = {
+		EEEE236D3571AFA10919D89C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,7 +420,6 @@
 				A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */,
 				A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */,
 				A96DB33F1E8F6E35000DF63C /* SCArticleDetailViewController.m in Sources */,
-				A96DB35E1E907530000DF63C /* SCChatViewController.m in Sources */,
 				A96DB3191E8F551B000DF63C /* FirstViewController.m in Sources */,
 				A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */,
 				A96DB3131E8F551B000DF63C /* main.m in Sources */,
@@ -564,7 +558,7 @@
 		};
 		A96DB3341E8F551B000DF63C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9614C18684A9CA813B65A8BB /* Pods-ShareCloset.debug.xcconfig */;
+			baseConfigurationReference = 7CA82957EC0239E92328E535 /* Pods-ShareCloset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DUC5W8UNF5;
@@ -573,52 +567,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"Bolts\"",
-					"-l\"JSQMessagesViewController\"",
-					"-l\"JSQSystemSoundPlayer\"",
-					"-l\"KIF\"",
-					"-l\"MBProgressHUD\"",
-					"-l\"Parse\"",
-					"-l\"ParseUI\"",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AudioToolbox\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"Crashlytics\"",
-					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"IOKit\"",
-					"-framework",
-					"\"MapKit\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"-weak_framework",
-					"\"Social\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jermer.ShareCloset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -627,7 +575,7 @@
 		};
 		A96DB3351E8F551B000DF63C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E1AC3D724DA23D7F43CE047 /* Pods-ShareCloset.release.xcconfig */;
+			baseConfigurationReference = 5D49715819CBD216EC1E8250 /* Pods-ShareCloset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DUC5W8UNF5;
@@ -636,52 +584,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"Bolts\"",
-					"-l\"JSQMessagesViewController\"",
-					"-l\"JSQSystemSoundPlayer\"",
-					"-l\"KIF\"",
-					"-l\"MBProgressHUD\"",
-					"-l\"Parse\"",
-					"-l\"ParseUI\"",
-					"-l\"c++\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"AudioToolbox\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"Crashlytics\"",
-					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"IOKit\"",
-					"-framework",
-					"\"MapKit\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"-weak_framework",
-					"\"Social\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jermer.ShareCloset;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -690,7 +592,7 @@
 		};
 		A96DB3371E8F551B000DF63C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 390605BCFF206E537839BBC4 /* Pods-ShareClosetTests.debug.xcconfig */;
+			baseConfigurationReference = 7B41B8CECC505E6784C56979 /* Pods-ShareClosetTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = DUC5W8UNF5;
@@ -704,7 +606,7 @@
 		};
 		A96DB3381E8F551B000DF63C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30032C7133AB8D93AD4031E3 /* Pods-ShareClosetTests.release.xcconfig */;
+			baseConfigurationReference = EF9188110A3B424806971FFC /* Pods-ShareClosetTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = DUC5W8UNF5;
