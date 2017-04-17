@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-519" y="-1453"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="ly3-qp-WbH">
             <objects>
-                <viewController id="npe-hu-IGR" sceneMemberID="viewController">
+                <viewController id="npe-hu-IGR" customClass="SCLandingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0T2-yy-EcT"/>
                         <viewControllerLayoutGuide type="bottom" id="fDV-yA-QRv"/>
@@ -49,7 +49,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="lR6-aI-yVf"/>
                                 </constraints>
-                                <state key="normal" title="Log In">
+                                <state key="normal" title="Get Started">
                                     <color key="titleColor" red="0.050980392159999999" green="0.1647058824" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -61,24 +61,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="5wM-2u-6aR" kind="show" id="lac-q6-kX7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOJ-tg-oAJ">
-                                <rect key="frame" x="30" y="380" width="315" height="43"/>
-                                <state key="normal" title="Skip">
-                                    <color key="titleColor" red="0.050980392159999999" green="0.1647058824" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="AOC-7h-HHy"/>
+                                    <segue destination="5wM-2u-6aR" kind="presentation" id="lac-q6-kX7"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="p54-Ta-aCx">
@@ -94,12 +77,8 @@
                             <constraint firstItem="xlS-yW-yqH" firstAttribute="top" secondItem="p54-Ta-aCx" secondAttribute="bottom" constant="40" id="HA5-Ot-cim"/>
                             <constraint firstItem="xlS-yW-yqH" firstAttribute="width" secondItem="EGD-wl-Xuc" secondAttribute="width" constant="-60" id="IXL-1y-S9A"/>
                             <constraint firstItem="p54-Ta-aCx" firstAttribute="top" secondItem="0T2-yy-EcT" secondAttribute="bottom" constant="60" id="Wyc-hD-E5B"/>
-                            <constraint firstItem="wOJ-tg-oAJ" firstAttribute="width" secondItem="xlS-yW-yqH" secondAttribute="width" id="X8v-Gb-LLM"/>
                             <constraint firstItem="p54-Ta-aCx" firstAttribute="width" secondItem="EGD-wl-Xuc" secondAttribute="width" constant="-100" id="cNP-eo-Mur"/>
                             <constraint firstItem="y5Z-Wa-NfF" firstAttribute="height" secondItem="EGD-wl-Xuc" secondAttribute="height" id="dc7-uh-jah"/>
-                            <constraint firstItem="wOJ-tg-oAJ" firstAttribute="height" secondItem="xlS-yW-yqH" secondAttribute="height" id="gIH-2A-P7d"/>
-                            <constraint firstItem="wOJ-tg-oAJ" firstAttribute="top" secondItem="xlS-yW-yqH" secondAttribute="bottom" constant="30" id="kxL-4g-lF9"/>
-                            <constraint firstItem="wOJ-tg-oAJ" firstAttribute="centerX" secondItem="EGD-wl-Xuc" secondAttribute="centerX" id="mMn-l7-x3p"/>
                             <constraint firstItem="y5Z-Wa-NfF" firstAttribute="centerX" secondItem="EGD-wl-Xuc" secondAttribute="centerX" id="pb4-7r-4Zz"/>
                             <constraint firstItem="y5Z-Wa-NfF" firstAttribute="width" secondItem="EGD-wl-Xuc" secondAttribute="width" id="pyY-2E-AVA"/>
                             <constraint firstItem="xlS-yW-yqH" firstAttribute="centerX" secondItem="EGD-wl-Xuc" secondAttribute="centerX" id="rKv-fo-AMW"/>
@@ -108,7 +87,7 @@
                     </view>
                     <connections>
                         <segue destination="5wM-2u-6aR" kind="show" id="Yme-eV-ihB"/>
-                        <segue destination="49e-Tb-3d3" kind="show" id="9F8-sh-Ses"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="SCTabBarController" id="9F8-sh-Ses"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KoK-YO-Gvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,7 +115,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="SCTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -186,7 +165,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sFQ-6j-XNG" id="ZKL-6a-rEE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns4-eP-4ft">
@@ -210,7 +189,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjv-eC-i4H" id="3FV-hK-f7g">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA3-CB-g8B">
@@ -234,7 +213,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aYj-uu-8ji" id="Os2-Qh-TPH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcJ-IX-Svt">
@@ -258,7 +237,7 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="we0-an-HQa" id="98s-eW-8y9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRD-Pa-8Tx">
@@ -369,7 +348,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LK0-cb-VAA" id="1T6-Cp-CBZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-kw-GNd">
@@ -724,7 +703,6 @@
         <image name="placeholder" width="1024" height="682"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AOC-7h-HHy"/>
         <segue reference="lac-q6-kX7"/>
     </inferredMetricsTieBreakers>
 </document>

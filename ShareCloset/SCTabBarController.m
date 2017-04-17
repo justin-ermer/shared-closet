@@ -1,24 +1,23 @@
 //
-//  SCLandingPageViewController.m
+//  SCTabBarController.m
 //  ShareCloset
 //
-//  Created by Justin Ermer on 4/1/17.
+//  Created by Justin Ermer on 4/17/17.
 //  Copyright © 2017 Justin Ermer. All rights reserved.
 //
 
-#import "SCLandingPageViewController.h"
+#import "SCTabBarController.h"
 
-@interface SCLandingPageViewController ()
+@interface SCTabBarController ()
 
 @end
 
-@implementation SCLandingPageViewController
+@implementation SCTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
 
 /*
 #pragma mark - Navigation

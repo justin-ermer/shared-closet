@@ -16,10 +16,10 @@
 		A95895EF1E90A95000376A87 /* UIViewController+SCPhotoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895EE1E90A95000376A87 /* UIViewController+SCPhotoAlert.m */; };
 		A95895F21E919F9D00376A87 /* SCMyArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895F11E919F9D00376A87 /* SCMyArticlesViewController.m */; };
 		A96348C91EA34D0A007A1EBA /* UIViewController+SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348C81EA34D0A007A1EBA /* UIViewController+SCViewController.m */; };
+		A96348CC1EA467B9007A1EBA /* SCLandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */; };
+		A96348CF1EA504B6007A1EBA /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348CE1EA504B6007A1EBA /* SCTabBarController.m */; };
 		A96DB3131E8F551B000DF63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3121E8F551B000DF63C /* main.m */; };
 		A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3151E8F551B000DF63C /* AppDelegate.m */; };
-		A96DB3191E8F551B000DF63C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3181E8F551B000DF63C /* FirstViewController.m */; };
-		A96DB31C1E8F551B000DF63C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB31B1E8F551B000DF63C /* SecondViewController.m */; };
 		A96DB31F1E8F551B000DF63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96DB31D1E8F551B000DF63C /* Main.storyboard */; };
 		A96DB3211E8F551B000DF63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96DB3201E8F551B000DF63C /* Assets.xcassets */; };
 		A96DB3241E8F551B000DF63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96DB3221E8F551B000DF63C /* LaunchScreen.storyboard */; };
@@ -29,7 +29,6 @@
 		A96DB3421E8F6E53000DF63C /* SCCreateArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3411E8F6E53000DF63C /* SCCreateArticleViewController.m */; };
 		A96DB3451E8F6EE4000DF63C /* SCArticleGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3441E8F6EE4000DF63C /* SCArticleGalleryViewController.m */; };
 		A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3471E8F6F2F000DF63C /* SCCreateProfileViewController.m */; };
-		A96DB34B1E8F6F94000DF63C /* SCLandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */; };
 		A96DB34E1E8F7206000DF63C /* SCConversationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */; };
 		A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */; };
 		A96DB35B1E9074FF000DF63C /* SCConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */; };
@@ -65,14 +64,14 @@
 		A95895F11E919F9D00376A87 /* SCMyArticlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMyArticlesViewController.m; sourceTree = "<group>"; };
 		A96348C71EA34D0A007A1EBA /* UIViewController+SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SCViewController.h"; sourceTree = "<group>"; };
 		A96348C81EA34D0A007A1EBA /* UIViewController+SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SCViewController.m"; sourceTree = "<group>"; };
+		A96348CA1EA467B9007A1EBA /* SCLandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLandingViewController.h; sourceTree = "<group>"; };
+		A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLandingViewController.m; sourceTree = "<group>"; };
+		A96348CD1EA504B6007A1EBA /* SCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
+		A96348CE1EA504B6007A1EBA /* SCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
 		A96DB30E1E8F551B000DF63C /* ShareCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96DB3121E8F551B000DF63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A96DB3141E8F551B000DF63C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A96DB3151E8F551B000DF63C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A96DB3171E8F551B000DF63C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A96DB3181E8F551B000DF63C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A96DB31A1E8F551B000DF63C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A96DB31B1E8F551B000DF63C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A96DB31E1E8F551B000DF63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A96DB3201E8F551B000DF63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A96DB3231E8F551B000DF63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,8 +89,6 @@
 		A96DB3441E8F6EE4000DF63C /* SCArticleGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCArticleGalleryViewController.m; sourceTree = "<group>"; };
 		A96DB3461E8F6F2F000DF63C /* SCCreateProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCreateProfileViewController.h; sourceTree = "<group>"; };
 		A96DB3471E8F6F2F000DF63C /* SCCreateProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCreateProfileViewController.m; sourceTree = "<group>"; };
-		A96DB3491E8F6F94000DF63C /* SCLandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLandingPageViewController.h; sourceTree = "<group>"; };
-		A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLandingPageViewController.m; sourceTree = "<group>"; };
 		A96DB34C1E8F7206000DF63C /* SCConversationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConversationsViewController.h; sourceTree = "<group>"; };
 		A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConversationsViewController.m; sourceTree = "<group>"; };
 		A96DB3531E8F851F000DF63C /* SCGalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGalleryCollectionViewCell.h; sourceTree = "<group>"; };
@@ -198,10 +195,6 @@
 				A96DB3391E8F6DCB000DF63C /* View Controllers */,
 				A96DB3141E8F551B000DF63C /* AppDelegate.h */,
 				A96DB3151E8F551B000DF63C /* AppDelegate.m */,
-				A96DB3171E8F551B000DF63C /* FirstViewController.h */,
-				A96DB3181E8F551B000DF63C /* FirstViewController.m */,
-				A96DB31A1E8F551B000DF63C /* SecondViewController.h */,
-				A96DB31B1E8F551B000DF63C /* SecondViewController.m */,
 				A96DB31D1E8F551B000DF63C /* Main.storyboard */,
 				A96DB3201E8F551B000DF63C /* Assets.xcassets */,
 				A96DB3221E8F551B000DF63C /* LaunchScreen.storyboard */,
@@ -241,12 +234,14 @@
 				A96DB3441E8F6EE4000DF63C /* SCArticleGalleryViewController.m */,
 				A96DB3461E8F6F2F000DF63C /* SCCreateProfileViewController.h */,
 				A96DB3471E8F6F2F000DF63C /* SCCreateProfileViewController.m */,
-				A96DB3491E8F6F94000DF63C /* SCLandingPageViewController.h */,
-				A96DB34A1E8F6F94000DF63C /* SCLandingPageViewController.m */,
 				A96DB34C1E8F7206000DF63C /* SCConversationsViewController.h */,
 				A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */,
 				A95895F01E919F9D00376A87 /* SCMyArticlesViewController.h */,
 				A95895F11E919F9D00376A87 /* SCMyArticlesViewController.m */,
+				A96348CA1EA467B9007A1EBA /* SCLandingViewController.h */,
+				A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */,
+				A96348CD1EA504B6007A1EBA /* SCTabBarController.h */,
+				A96348CE1EA504B6007A1EBA /* SCTabBarController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -477,26 +472,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96DB3451E8F6EE4000DF63C /* SCArticleGalleryViewController.m in Sources */,
-				A96DB31C1E8F551B000DF63C /* SecondViewController.m in Sources */,
 				A95895EF1E90A95000376A87 /* UIViewController+SCPhotoAlert.m in Sources */,
 				A96DB34E1E8F7206000DF63C /* SCConversationsViewController.m in Sources */,
 				A96DB3421E8F6E53000DF63C /* SCCreateArticleViewController.m in Sources */,
 				A95895E51E90979D00376A87 /* SCUser.m in Sources */,
 				A95895EB1E90A2DE00376A87 /* SCMessage.m in Sources */,
 				A96DB35B1E9074FF000DF63C /* SCConversationTableViewCell.m in Sources */,
+				A96348CF1EA504B6007A1EBA /* SCTabBarController.m in Sources */,
 				A9895A721E98BDC000F95318 /* SCPhoto.m in Sources */,
 				A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */,
 				A95895E21E90978800376A87 /* SCArticle.m in Sources */,
 				A95895F21E919F9D00376A87 /* SCMyArticlesViewController.m in Sources */,
 				A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */,
 				A96DB33F1E8F6E35000DF63C /* SCArticleDetailViewController.m in Sources */,
-				A96DB3191E8F551B000DF63C /* FirstViewController.m in Sources */,
 				A96348C91EA34D0A007A1EBA /* UIViewController+SCViewController.m in Sources */,
 				A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */,
 				A95895E81E90A2D300376A87 /* SCConversation.m in Sources */,
 				A96DB3131E8F551B000DF63C /* main.m in Sources */,
 				A96DB33C1E8F6E16000DF63C /* SCSearchViewController.m in Sources */,
-				A96DB34B1E8F6F94000DF63C /* SCLandingPageViewController.m in Sources */,
+				A96348CC1EA467B9007A1EBA /* SCLandingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

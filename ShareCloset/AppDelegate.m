@@ -22,8 +22,8 @@
     [SCArticle registerSubclass];
     
     [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
-        configuration.applicationId = @"closet-test";
-        configuration.server = @"http://closet-test.herokuapp.com/parse";
+        configuration.applicationId = @"closet-clique";
+        configuration.server = @"http://closet-clique.herokuapp.com/parse";
     }]];
 
     return YES;
