@@ -18,6 +18,8 @@
 		A96348C91EA34D0A007A1EBA /* UIViewController+SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348C81EA34D0A007A1EBA /* UIViewController+SCViewController.m */; };
 		A96348CC1EA467B9007A1EBA /* SCLandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */; };
 		A96348CF1EA504B6007A1EBA /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348CE1EA504B6007A1EBA /* SCTabBarController.m */; };
+		A96348D31EA51C11007A1EBA /* SCArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348D11EA51C11007A1EBA /* SCArticleTableViewCell.m */; };
+		A96348D41EA51C11007A1EBA /* SCArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96348D21EA51C11007A1EBA /* SCArticleTableViewCell.xib */; };
 		A96DB3131E8F551B000DF63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3121E8F551B000DF63C /* main.m */; };
 		A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3151E8F551B000DF63C /* AppDelegate.m */; };
 		A96DB31F1E8F551B000DF63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96DB31D1E8F551B000DF63C /* Main.storyboard */; };
@@ -68,6 +70,9 @@
 		A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLandingViewController.m; sourceTree = "<group>"; };
 		A96348CD1EA504B6007A1EBA /* SCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
 		A96348CE1EA504B6007A1EBA /* SCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
+		A96348D01EA51C11007A1EBA /* SCArticleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCArticleTableViewCell.h; sourceTree = "<group>"; };
+		A96348D11EA51C11007A1EBA /* SCArticleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCArticleTableViewCell.m; sourceTree = "<group>"; };
+		A96348D21EA51C11007A1EBA /* SCArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCArticleTableViewCell.xib; sourceTree = "<group>"; };
 		A96DB30E1E8F551B000DF63C /* ShareCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96DB3121E8F551B000DF63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A96DB3141E8F551B000DF63C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -253,6 +258,9 @@
 				A96DB3541E8F851F000DF63C /* SCGalleryCollectionViewCell.m */,
 				A96DB3591E9074FF000DF63C /* SCConversationTableViewCell.h */,
 				A96DB35A1E9074FF000DF63C /* SCConversationTableViewCell.m */,
+				A96348D01EA51C11007A1EBA /* SCArticleTableViewCell.h */,
+				A96348D11EA51C11007A1EBA /* SCArticleTableViewCell.m */,
+				A96348D21EA51C11007A1EBA /* SCArticleTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -358,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96348D41EA51C11007A1EBA /* SCArticleTableViewCell.xib in Resources */,
 				A96DB3241E8F551B000DF63C /* LaunchScreen.storyboard in Resources */,
 				A96DB3211E8F551B000DF63C /* Assets.xcassets in Resources */,
 				A96DB31F1E8F551B000DF63C /* Main.storyboard in Resources */,
@@ -487,6 +496,7 @@
 				A96DB33F1E8F6E35000DF63C /* SCArticleDetailViewController.m in Sources */,
 				A96348C91EA34D0A007A1EBA /* UIViewController+SCViewController.m in Sources */,
 				A96DB3551E8F851F000DF63C /* SCGalleryCollectionViewCell.m in Sources */,
+				A96348D31EA51C11007A1EBA /* SCArticleTableViewCell.m in Sources */,
 				A95895E81E90A2D300376A87 /* SCConversation.m in Sources */,
 				A96DB3131E8F551B000DF63C /* main.m in Sources */,
 				A96DB33C1E8F6E16000DF63C /* SCSearchViewController.m in Sources */,

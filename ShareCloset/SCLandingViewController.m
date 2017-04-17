@@ -48,8 +48,7 @@
 
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        [self performSegueWithIdentifier:NSStringFromClass([SCTabBarController class]) sender:self];
+    [signUpController dismissViewControllerAnimated:YES completion:^{
     }];
 }
 

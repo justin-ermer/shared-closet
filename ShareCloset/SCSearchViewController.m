@@ -7,17 +7,81 @@
 //
 
 #import "SCSearchViewController.h"
+#import "SCArticleTableViewCell.h"
+#import "SCArticle.h"
+#import "SCUser.h"
 
-@interface SCSearchViewController ()
+@interface SCSearchViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSArray *articles;
 
 @end
+
+static CGFloat DefaultRowHeight = 80.0f;
 
 @implementation SCSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SCArticleTableViewCell class]) bundle: nil] forCellReuseIdentifier:NSStringFromClass([SCArticleTableViewCell class])];
+    
+    UIRefreshControl *pullToRefresh = [[UIRefreshControl alloc] init];
+    [pullToRefresh addTarget:self
+                      action:@selector(updateArticles)
+            forControlEvents:UIControlEventValueChanged];
+    
+    [self.tableView setRefreshControl:pullToRefresh];
+    
+    [self updateArticles];
 }
+
+- (void)updateArticles
+{
+    PFQuery *query = [PFQuery queryWithClassName:[SCArticle parseClassName]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.articles = objects;
+            [self.tableView reloadData];
+        } else {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        
+        [self.tableView.refreshControl endRefreshing];
+    }];
+
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.articles count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SCArticleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SCArticleTableViewCell class])];
+    
+    [cell configureWithArticle:[self.articles objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return DefaultRowHeight;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 
 /*
 #pragma mark - Navigation

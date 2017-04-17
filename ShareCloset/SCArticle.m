@@ -11,8 +11,9 @@
 @implementation SCArticle
 
 @dynamic articleTitle;
-//@dynamic articleDescription;
-//@dynamic image;
+@dynamic articleDescription;
+@dynamic image;
+@dynamic owner;
 
 + (void)load {
     [self registerSubclass];
