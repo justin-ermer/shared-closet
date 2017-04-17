@@ -7,8 +7,16 @@
 //
 
 #import "SCArticleDetailViewController.h"
+#import "SCArticle.h"
+#import "UIViewController+SCViewController.h"
 
 @interface SCArticleDetailViewController ()
+
+@property (nonatomic, weak) IBOutlet UIImageView *articleImageView;
+@property (nonatomic, weak) IBOutlet UILabel *articleDescriptionLabel;
+
+@property (nonatomic, weak) IBOutlet UIImageView *ownerThumbnailImageView;
+@property (nonatomic, weak) IBOutlet UILabel *ownerNameLabel;
 
 @end
 
@@ -16,9 +24,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
+- (void)updateViews
+{
+    [self setTitle:[self.article articleTitle]];
+    [self.articleDescriptionLabel setText:[self.article articleDescription]];
+    
+    [[[self.article image] photoFile] getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+        if (!error) {
+            [self.articleImageView setImage:[UIImage imageWithData:imageData]];
+        }
+        else
+        {
+            [self showAlertWithTitle:@"Error" message:@"Error downloading image."];
+        }
+    }];
+
+}
 
 /*
 #pragma mark - Navigation
