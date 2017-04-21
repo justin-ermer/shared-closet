@@ -26,7 +26,10 @@ static CGFloat DefaultRowHeight = 80.0f;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SCArticleTableViewCell class]) bundle: nil] forCellReuseIdentifier:NSStringFromClass([SCArticleTableViewCell class])];
+    [self setTitle:@"Search"];
+
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SCArticleTableViewCell class]) bundle: nil]
+         forCellReuseIdentifier:NSStringFromClass([SCArticleTableViewCell class])];
     
     UIRefreshControl *pullToRefresh = [[UIRefreshControl alloc] init];
     [pullToRefresh addTarget:self

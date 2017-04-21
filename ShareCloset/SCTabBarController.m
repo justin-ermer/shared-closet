@@ -7,6 +7,8 @@
 //
 
 #import "SCTabBarController.h"
+#import "SCLoginViewController.h"
+#import <Parse/Parse.h>
 
 @interface SCTabBarController ()
 
@@ -16,7 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self checkUserState];
+}
+
+- (void)checkUserState
+{
+    if([PFUser currentUser] == nil)
+    {
+        [self performSegueWithIdentifier:NSStringFromClass([SCLoginViewController class]) sender:self];
+    }
 }
 
 /*

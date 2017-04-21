@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setTitle:@"My Closet"];
+
     UIBarButtonItem *addArticleButton = [[UIBarButtonItem alloc] initWithTitle:@"Add Article" style:UIBarButtonItemStyleDone target:self action:@selector(addArticlePressed)];
     self.navigationItem.rightBarButtonItem = addArticleButton;
 }

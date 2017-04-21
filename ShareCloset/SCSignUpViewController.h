@@ -1,5 +1,5 @@
 //
-//  SCTabBarController.h
+//  SCSignUpViewController.h
 //  ShareCloset
 //
 //  Created by Justin Ermer on 4/17/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCTabBarController : UITabBarController
-
-- (void)checkUserState;
+@interface SCSignUpViewController : UIViewController
 
 @end

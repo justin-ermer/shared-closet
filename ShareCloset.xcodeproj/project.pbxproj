@@ -15,11 +15,13 @@
 		A95895EB1E90A2DE00376A87 /* SCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895EA1E90A2DE00376A87 /* SCMessage.m */; };
 		A95895EF1E90A95000376A87 /* UIViewController+SCPhotoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895EE1E90A95000376A87 /* UIViewController+SCPhotoAlert.m */; };
 		A95895F21E919F9D00376A87 /* SCMyArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895F11E919F9D00376A87 /* SCMyArticlesViewController.m */; };
+		A96237001EAA9A00009CEE98 /* SCSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96236FF1EAA9A00009CEE98 /* SCSettingsTableViewController.m */; };
 		A96348C91EA34D0A007A1EBA /* UIViewController+SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348C81EA34D0A007A1EBA /* UIViewController+SCViewController.m */; };
-		A96348CC1EA467B9007A1EBA /* SCLandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */; };
 		A96348CF1EA504B6007A1EBA /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348CE1EA504B6007A1EBA /* SCTabBarController.m */; };
 		A96348D31EA51C11007A1EBA /* SCArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348D11EA51C11007A1EBA /* SCArticleTableViewCell.m */; };
 		A96348D41EA51C11007A1EBA /* SCArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96348D21EA51C11007A1EBA /* SCArticleTableViewCell.xib */; };
+		A96348D71EA5B4D9007A1EBA /* SCSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348D61EA5B4D9007A1EBA /* SCSignUpViewController.m */; };
+		A96348DA1EA69FA9007A1EBA /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96348D91EA69FA9007A1EBA /* SCLoginViewController.m */; };
 		A96DB3131E8F551B000DF63C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3121E8F551B000DF63C /* main.m */; };
 		A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A96DB3151E8F551B000DF63C /* AppDelegate.m */; };
 		A96DB31F1E8F551B000DF63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96DB31D1E8F551B000DF63C /* Main.storyboard */; };
@@ -64,15 +66,19 @@
 		A95895EE1E90A95000376A87 /* UIViewController+SCPhotoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SCPhotoAlert.m"; sourceTree = "<group>"; };
 		A95895F01E919F9D00376A87 /* SCMyArticlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMyArticlesViewController.h; sourceTree = "<group>"; };
 		A95895F11E919F9D00376A87 /* SCMyArticlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMyArticlesViewController.m; sourceTree = "<group>"; };
+		A96236FE1EAA9A00009CEE98 /* SCSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSettingsTableViewController.h; sourceTree = "<group>"; };
+		A96236FF1EAA9A00009CEE98 /* SCSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSettingsTableViewController.m; sourceTree = "<group>"; };
 		A96348C71EA34D0A007A1EBA /* UIViewController+SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SCViewController.h"; sourceTree = "<group>"; };
 		A96348C81EA34D0A007A1EBA /* UIViewController+SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SCViewController.m"; sourceTree = "<group>"; };
-		A96348CA1EA467B9007A1EBA /* SCLandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLandingViewController.h; sourceTree = "<group>"; };
-		A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLandingViewController.m; sourceTree = "<group>"; };
 		A96348CD1EA504B6007A1EBA /* SCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
 		A96348CE1EA504B6007A1EBA /* SCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
 		A96348D01EA51C11007A1EBA /* SCArticleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCArticleTableViewCell.h; sourceTree = "<group>"; };
 		A96348D11EA51C11007A1EBA /* SCArticleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCArticleTableViewCell.m; sourceTree = "<group>"; };
 		A96348D21EA51C11007A1EBA /* SCArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCArticleTableViewCell.xib; sourceTree = "<group>"; };
+		A96348D51EA5B4D9007A1EBA /* SCSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSignUpViewController.h; sourceTree = "<group>"; };
+		A96348D61EA5B4D9007A1EBA /* SCSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSignUpViewController.m; sourceTree = "<group>"; };
+		A96348D81EA69FA9007A1EBA /* SCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginViewController.h; sourceTree = "<group>"; };
+		A96348D91EA69FA9007A1EBA /* SCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginViewController.m; sourceTree = "<group>"; };
 		A96DB30E1E8F551B000DF63C /* ShareCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96DB3121E8F551B000DF63C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A96DB3141E8F551B000DF63C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +167,17 @@
 			name = Utility;
 			sourceTree = "<group>";
 		};
+		A96236FD1EAA992E009CEE98 /* Log In */ = {
+			isa = PBXGroup;
+			children = (
+				A96348D51EA5B4D9007A1EBA /* SCSignUpViewController.h */,
+				A96348D61EA5B4D9007A1EBA /* SCSignUpViewController.m */,
+				A96348D81EA69FA9007A1EBA /* SCLoginViewController.h */,
+				A96348D91EA69FA9007A1EBA /* SCLoginViewController.m */,
+			);
+			name = "Log In";
+			sourceTree = "<group>";
+		};
 		A96348C61EA34CE1007A1EBA /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,10 +260,11 @@
 				A96DB34D1E8F7206000DF63C /* SCConversationsViewController.m */,
 				A95895F01E919F9D00376A87 /* SCMyArticlesViewController.h */,
 				A95895F11E919F9D00376A87 /* SCMyArticlesViewController.m */,
-				A96348CA1EA467B9007A1EBA /* SCLandingViewController.h */,
-				A96348CB1EA467B9007A1EBA /* SCLandingViewController.m */,
 				A96348CD1EA504B6007A1EBA /* SCTabBarController.h */,
 				A96348CE1EA504B6007A1EBA /* SCTabBarController.m */,
+				A96236FD1EAA992E009CEE98 /* Log In */,
+				A96236FE1EAA9A00009CEE98 /* SCSettingsTableViewController.h */,
+				A96236FF1EAA9A00009CEE98 /* SCSettingsTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -480,6 +498,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96348DA1EA69FA9007A1EBA /* SCLoginViewController.m in Sources */,
+				A96348D71EA5B4D9007A1EBA /* SCSignUpViewController.m in Sources */,
 				A96DB3451E8F6EE4000DF63C /* SCArticleGalleryViewController.m in Sources */,
 				A95895EF1E90A95000376A87 /* UIViewController+SCPhotoAlert.m in Sources */,
 				A96DB34E1E8F7206000DF63C /* SCConversationsViewController.m in Sources */,
@@ -491,6 +511,7 @@
 				A9895A721E98BDC000F95318 /* SCPhoto.m in Sources */,
 				A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */,
 				A95895E21E90978800376A87 /* SCArticle.m in Sources */,
+				A96237001EAA9A00009CEE98 /* SCSettingsTableViewController.m in Sources */,
 				A95895F21E919F9D00376A87 /* SCMyArticlesViewController.m in Sources */,
 				A96DB3161E8F551B000DF63C /* AppDelegate.m in Sources */,
 				A96DB33F1E8F6E35000DF63C /* SCArticleDetailViewController.m in Sources */,
@@ -500,7 +521,6 @@
 				A95895E81E90A2D300376A87 /* SCConversation.m in Sources */,
 				A96DB3131E8F551B000DF63C /* main.m in Sources */,
 				A96DB33C1E8F6E16000DF63C /* SCSearchViewController.m in Sources */,
-				A96348CC1EA467B9007A1EBA /* SCLandingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
