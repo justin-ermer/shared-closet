@@ -492,49 +492,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-jB-0h7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="80" id="LK0-cb-VAA">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LK0-cb-VAA" id="1T6-Cp-CBZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-kw-GNd">
-                                                    <rect key="frame" x="16" y="8" width="63.5" height="63.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="rJi-kw-GNd" secondAttribute="height" multiplier="1:1" id="iNf-x7-inH"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Erin Nameson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCs-dh-xxp">
-                                                    <rect key="frame" x="87" y="8" width="280" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Latest message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmC-e5-16o">
-                                                    <rect key="frame" x="87" y="29" width="280" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jmC-e5-16o" secondAttribute="bottom" constant="8" id="9sr-Jr-nJc"/>
-                                                <constraint firstItem="jmC-e5-16o" firstAttribute="leading" secondItem="rJi-kw-GNd" secondAttribute="trailing" constant="8" id="EeU-rc-Aan"/>
-                                                <constraint firstAttribute="bottom" secondItem="rJi-kw-GNd" secondAttribute="bottom" constant="8" id="F31-kd-Pgu"/>
-                                                <constraint firstAttribute="trailing" secondItem="jmC-e5-16o" secondAttribute="trailing" constant="8" id="NvF-xw-z5I"/>
-                                                <constraint firstItem="rJi-kw-GNd" firstAttribute="leading" secondItem="1T6-Cp-CBZ" secondAttribute="leading" constant="16" id="OuE-UF-kV3"/>
-                                                <constraint firstItem="FCs-dh-xxp" firstAttribute="leading" secondItem="rJi-kw-GNd" secondAttribute="trailing" constant="8" id="QmK-yO-0Q6"/>
-                                                <constraint firstItem="rJi-kw-GNd" firstAttribute="centerY" secondItem="1T6-Cp-CBZ" secondAttribute="centerY" id="Vxq-FZ-pUo"/>
-                                                <constraint firstItem="FCs-dh-xxp" firstAttribute="top" secondItem="1T6-Cp-CBZ" secondAttribute="top" constant="8" id="p09-5a-TUL"/>
-                                                <constraint firstAttribute="trailing" secondItem="FCs-dh-xxp" secondAttribute="trailing" constant="8" id="pGV-LG-uQA"/>
-                                                <constraint firstItem="rJi-kw-GNd" firstAttribute="top" secondItem="1T6-Cp-CBZ" secondAttribute="top" constant="8" id="ptg-fz-sjN"/>
-                                                <constraint firstItem="jmC-e5-16o" firstAttribute="top" secondItem="FCs-dh-xxp" secondAttribute="bottom" id="r1j-2S-Moi"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -726,16 +683,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HnN-jc-3Rj">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7gs-zj-e5K">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7gs-zj-e5K" id="7Kg-Ot-3ob">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="NfN-58-P3b" id="OrZ-2j-ZT4"/>
                                     <outlet property="delegate" destination="NfN-58-P3b" id="0Ax-mv-914"/>

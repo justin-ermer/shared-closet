@@ -13,6 +13,7 @@
 #import "SCArticle.h"
 #import "SCPhoto.h"
 #import "UIViewController+SCViewController.h"
+#import "SCUser.h"
 
 @interface SCCreateArticleViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate>
 
@@ -44,6 +45,10 @@
     SCArticle *article = [SCArticle object];
     article.articleTitle = self.articleTitle.text;
     article.articleDescription = self.articleDescription.text;
+    article.owner = [SCUser currentUser];
+    
+
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     NSData *imageData = UIImagePNGRepresentation(self.imageView.image);
     NSString *imageName = [NSString stringWithFormat:@"%d%@", (int)[[NSDate date] timeIntervalSince1970], @"image.png"];
@@ -54,25 +59,38 @@
     [photo saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         
         if (!succeeded) {
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            
             [[[self navigationItem] rightBarButtonItem] setEnabled:YES];
-
             [self showAlertWithTitle:@"Error" message:@"An error has occured trying to upload your image. Please try again."];
         }
-        
-        [article setImage:photo];
-        
-        [article saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        else
+        {
+            [article setImage:photo];
             
-            if (!succeeded) {
-                [[[self navigationItem] rightBarButtonItem] setEnabled:YES];
+            [article saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
                 
-                [self showAlertWithTitle:@"Error" message:@"An error has occured trying to upload your article. Please try again."];
-            }
-            else
-            {
-                [self showAlertWithTitle:nil message:@"You have successfully added your new clothing item!" ];
-            }
-        }];
+                if (!succeeded) {
+                    [MBProgressHUD hideHUDForView:self.view animated:YES];
+                    [[[self navigationItem] rightBarButtonItem] setEnabled:YES];
+                    
+                    [self showAlertWithTitle:@"Error" message:@"An error has occured trying to upload your article. Please try again."];
+                }
+                else
+                {
+                    [[[SCUser currentUser] articles] addObject:article];
+                    [[SCUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+                        if (succeeded) {                            
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        } else {
+                            [self showAlertWithTitle:@"Error" message:@"An error has occured trying to upload your article. Please try again."];
+                        }
+                    }];
+                }
+            }];
+        }
     }];
     
 }

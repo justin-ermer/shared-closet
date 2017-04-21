@@ -11,5 +11,6 @@
 @implementation SCUser
 
 @dynamic profileImage;
+@dynamic articles;
 
 @end

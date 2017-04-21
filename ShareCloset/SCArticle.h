@@ -9,6 +9,7 @@
 #import <Parse/Parse.h>
 #import <Parse/PFObject+Subclass.h>
 #import "SCPhoto.h"
+#import "SCUser.h"
 
 @interface SCArticle : PFObject<PFSubclassing>
 
@@ -17,5 +18,6 @@
 @property (nonatomic, strong) NSString * articleTitle;
 @property (nonatomic, strong) NSString * articleDescription;
 @property (nonatomic, strong) SCPhoto *image;
+@property (nonatomic, strong) SCUser *owner;
 
 @end

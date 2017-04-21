@@ -11,6 +11,7 @@
 @interface SCUser : PFUser
 
 @property (nonatomic, strong) PFFile *profileImage;
+@property (nonatomic, strong) PFRelation *articles;
 
 
 @end
