@@ -11,11 +11,7 @@
 #import "SCArticle.h"
 #import "SCUser.h"
 
-@interface SCSearchViewController () <UITableViewDelegate, UITableViewDataSource>
-
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
-
-@property (nonatomic, strong) NSArray *articles;
+@interface SCSearchViewController () 
 
 @end
 
@@ -44,6 +40,7 @@ static CGFloat DefaultRowHeight = 80.0f;
 - (void)updateArticles
 {
     PFQuery *query = [PFQuery queryWithClassName:[SCArticle parseClassName]];
+    [query whereKeyExists:@"owner"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             self.articles = objects;

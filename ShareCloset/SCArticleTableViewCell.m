@@ -34,14 +34,15 @@
 
 - (void)configureWithArticle:(SCArticle*)article
 {
-    [article fetchIfNeeded];
-    [[article image] fetchIfNeeded];
+    [article fetchIfNeededInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
+        [[article image] fetchIfNeededInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
+            [self.articleImageView setFile:[[article image] photoFile]];
+            [self.articleImageView loadInBackground];
+        }];
+        [self.articleTitleLabel setText:article.articleTitle];
+        [self.articleOwnerNameLabel setText:article.articleDescription];
+    }];
     
-    [self.articleTitleLabel setText:article.articleTitle];
-//    [self.articleOwnerNameLabel setText:article.articleDescription];
-    
-    [self.articleImageView setFile:[[article image] photoFile]];
-    [self.articleImageView loadInBackground];
 }
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SCSearchViewController : UIViewController
+@interface SCSearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSArray *articles;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end

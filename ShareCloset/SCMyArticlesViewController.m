@@ -8,8 +8,11 @@
 
 #import "SCMyArticlesViewController.h"
 #import "SCCreateArticleViewController.h"
+#import <Parse/Parse.h>
 
 @interface SCMyArticlesViewController ()
+
+@property (nonnull, strong) NSNumber *selectedRow;
 
 @end
 
@@ -24,19 +27,40 @@
     self.navigationItem.rightBarButtonItem = addArticleButton;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if(self.selectedRow)
+    {
+        [[self.articles objectAtIndex:self.selectedRow.integerValue] fetchIfNeededInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
+            [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.selectedRow.integerValue inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }];
+    }
+}
+
 - (void) addArticlePressed
 {
     [self performSegueWithIdentifier:NSStringFromClass([SCCreateArticleViewController class]) sender:self];
 }
 
-/*
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedRow = @(indexPath.row);
+    [self performSegueWithIdentifier:NSStringFromClass([SCCreateArticleViewController class]) sender:[self.articles objectAtIndex:indexPath.row]];
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue destinationViewController] isKindOfClass:[SCCreateArticleViewController class]])
+    {
+        [((SCCreateArticleViewController*)[segue destinationViewController]) setArticle:sender];
+    }
 }
-*/
 
 @end

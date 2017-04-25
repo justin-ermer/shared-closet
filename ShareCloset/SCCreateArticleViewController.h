@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SCArticle;
 
 @interface SCCreateArticleViewController : UIViewController
+
+@property (nonatomic, strong) SCArticle *article;
 
 @end
