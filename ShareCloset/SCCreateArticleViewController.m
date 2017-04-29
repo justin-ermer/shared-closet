@@ -15,12 +15,15 @@
 #import "SCPhoto.h"
 #import "UIViewController+SCViewController.h"
 #import "SCUser.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface SCCreateArticleViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate>
 
 @property (nonatomic, weak) IBOutlet PFImageView *articleImageView;
 @property (nonatomic, weak) IBOutlet UITextView *articleTitleTextView;
 @property (nonatomic, weak) IBOutlet UITextView *articleDescriptionTextView;
+
+@property (nonatomic, weak) IBOutlet UIButton *articleImageButton;
 
 @property (nonatomic, weak) IBOutlet UILabel *articleTitlePlaceholderLabel;
 @property (nonatomic, weak) IBOutlet UILabel *articleDescriptionPlaceholderLabel;
@@ -38,6 +41,10 @@ static NSString *DescriptionPlaceholder = @"Description";
     [super viewDidLoad];
     
     self.didUpdateImage = NO;
+    
+    self.articleImageButton.layer.cornerRadius = 5.0f;
+    self.articleImageButton.layer.borderColor = [UIColor colorWithWhite:0.5f alpha:0.5f].CGColor;
+    self.articleImageButton.layer.borderWidth = 1.0f;
     
     [self.articleTitlePlaceholderLabel setText:TitlePlaceholder];
     [self.articleDescriptionPlaceholderLabel setText:DescriptionPlaceholder];

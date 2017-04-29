@@ -41,7 +41,7 @@
 
 - (void) addArticlePressed
 {
-    [self performSegueWithIdentifier:NSStringFromClass([SCCreateArticleViewController class]) sender:self];
+    [self performSegueWithIdentifier:NSStringFromClass([SCCreateArticleViewController class]) sender:nil];
 }
 
 #pragma mark - UITableViewDelegate
