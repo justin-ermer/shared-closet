@@ -201,16 +201,6 @@ static NSString *DescriptionPlaceholder = @"Description";
     [self.articleImageView setImage:image];
     
     self.didUpdateImage = YES;
-
-    //maybe update image on the fly vs confirm button?
-//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//    [[SAWebService sharedInstance] uploadImage:image forUserId:self.user.userId withSuccess:^(id result) {
-//        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
-//        [self refreshPictures];
-//    } andFailure:^(NSError *error) {
-//        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
-//        [self handleRequestError:error];
-//    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

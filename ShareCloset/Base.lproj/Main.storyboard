@@ -436,7 +436,7 @@
                                     <constraint firstAttribute="width" constant="32" id="VkP-LT-8Uv"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oia-Ox-JPN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oia-Ox-JPN" customClass="PFImageView">
                                 <rect key="frame" x="75.5" y="80" width="225" height="225"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -452,19 +452,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-k3-eZQ">
+                                <rect key="frame" x="75" y="80" width="226" height="225"/>
+                                <connections>
+                                    <action selector="didTapPhoto:" destination="Ztv-Xg-j6b" eventType="touchUpInside" id="cVL-xy-pkO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oia-Ox-JPN" firstAttribute="centerX" secondItem="HW9-jE-15A" secondAttribute="centerX" id="DAd-nX-BCs"/>
+                            <constraint firstItem="bDM-k3-eZQ" firstAttribute="trailing" secondItem="oia-Ox-JPN" secondAttribute="trailing" id="Ehy-5J-FGo"/>
+                            <constraint firstItem="bDM-k3-eZQ" firstAttribute="top" secondItem="oia-Ox-JPN" secondAttribute="top" id="JBe-q5-c8D"/>
                             <constraint firstItem="KC7-eO-rAM" firstAttribute="top" secondItem="oia-Ox-JPN" secondAttribute="bottom" constant="24" id="NyC-8K-YdT"/>
+                            <constraint firstItem="bDM-k3-eZQ" firstAttribute="bottom" secondItem="oia-Ox-JPN" secondAttribute="bottom" id="Yoi-fM-2UI"/>
                             <constraint firstAttribute="trailing" secondItem="KC7-eO-rAM" secondAttribute="trailing" constant="16" id="b5W-Pv-fVZ"/>
                             <constraint firstItem="oia-Ox-JPN" firstAttribute="width" secondItem="HW9-jE-15A" secondAttribute="width" multiplier="0.6" id="jUv-9L-8BU"/>
                             <constraint firstItem="Wz7-fi-V1Y" firstAttribute="centerY" secondItem="oia-Ox-JPN" secondAttribute="centerY" id="qXd-PI-3GW"/>
                             <constraint firstItem="KC7-eO-rAM" firstAttribute="leading" secondItem="HW9-jE-15A" secondAttribute="leading" constant="16" id="tF2-oS-2bZ"/>
                             <constraint firstItem="oia-Ox-JPN" firstAttribute="top" secondItem="VTj-fz-Ser" secondAttribute="bottom" constant="16" id="yGr-M3-1Jr"/>
+                            <constraint firstItem="bDM-k3-eZQ" firstAttribute="leading" secondItem="oia-Ox-JPN" secondAttribute="leading" id="ynO-q0-4mn"/>
                             <constraint firstItem="Wz7-fi-V1Y" firstAttribute="centerX" secondItem="oia-Ox-JPN" secondAttribute="centerX" id="z7M-rZ-ppH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextfield" destination="KC7-eO-rAM" id="l5B-Aq-0iA"/>
+                        <outlet property="profileImageView" destination="oia-Ox-JPN" id="SeI-su-Zwb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFr-9e-Usb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

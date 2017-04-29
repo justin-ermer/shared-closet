@@ -12,5 +12,6 @@
 
 @dynamic profileImage;
 @dynamic articles;
+@dynamic name;
 
 @end

@@ -11,6 +11,8 @@
 @interface SCUser : PFUser
 
 @property (nonatomic, strong) PFFile *profileImage;
+@property (nonatomic, strong) NSString *name;
+
 @property (nonatomic, strong, readonly) PFRelation *articles;
 
 
