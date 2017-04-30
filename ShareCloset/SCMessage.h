@@ -8,14 +8,26 @@
 
 #import <Parse/Parse.h>
 #import "SCUser.h"
+#import "SCConversation.h"
+#import <JSQMessagesViewController/JSQMessageData.h>
 
-@interface SCMessage : PFObject
+@interface SCMessage : PFObject <JSQMessageData>
 
-@property (nonatomic, strong) NSString *message;
+NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSDate *timestamp;
 
+@property (nonatomic, strong) NSString *messageText;
+
+@property (nonatomic, strong) NSNumber *isRead;
+
 @property (nonatomic, strong) SCUser *sender;
 @property (nonatomic, strong) SCUser *recipient;
+
++ (NSString *)parseClassName;
+
++ (void)createMessage:(NSString*)messageString toUser:(SCUser*)toUser withConversation:(SCConversation*)conversation  resultBlock:(nullable void (^)(SCMessage * _Nullable newMessage, SCConversation * _Nullable newConversation, NSError * _Nullable error))block;
+
+NS_ASSUME_NONNULL_END
 
 @end

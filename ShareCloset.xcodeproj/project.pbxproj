@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D0D0A27D51BB1D73F913F37 /* libPods-ShareClosetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48B037F92AA47FAC0C26549 /* libPods-ShareClosetTests.a */; };
 		59AD3FBE971B12D5CC613315 /* libPods-ShareCloset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FB0834BF80A470632C52D6 /* libPods-ShareCloset.a */; };
+		A92B6FC71EB5942A008D09C3 /* SCMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B6FC61EB5942A008D09C3 /* SCMessagesViewController.m */; };
+		A92B6FCA1EB59D4D008D09C3 /* UIColor+SCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A92B6FC91EB59D4D008D09C3 /* UIColor+SCColor.m */; };
 		A95895E21E90978800376A87 /* SCArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895E11E90978800376A87 /* SCArticle.m */; };
 		A95895E51E90979D00376A87 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895E41E90979D00376A87 /* SCUser.m */; };
 		A95895E81E90A2D300376A87 /* SCConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = A95895E71E90A2D300376A87 /* SCConversation.m */; };
@@ -54,6 +56,10 @@
 		75FB0834BF80A470632C52D6 /* libPods-ShareCloset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareCloset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B41B8CECC505E6784C56979 /* Pods-ShareClosetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareClosetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareClosetTests/Pods-ShareClosetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CA82957EC0239E92328E535 /* Pods-ShareCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareCloset/Pods-ShareCloset.debug.xcconfig"; sourceTree = "<group>"; };
+		A92B6FC51EB5942A008D09C3 /* SCMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMessagesViewController.h; sourceTree = "<group>"; };
+		A92B6FC61EB5942A008D09C3 /* SCMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMessagesViewController.m; sourceTree = "<group>"; };
+		A92B6FC81EB59D4D008D09C3 /* UIColor+SCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SCColor.h"; sourceTree = "<group>"; };
+		A92B6FC91EB59D4D008D09C3 /* UIColor+SCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SCColor.m"; sourceTree = "<group>"; };
 		A95895E01E90978800376A87 /* SCArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCArticle.h; sourceTree = "<group>"; };
 		A95895E11E90978800376A87 /* SCArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCArticle.m; sourceTree = "<group>"; };
 		A95895E31E90979D00376A87 /* SCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUser.h; sourceTree = "<group>"; };
@@ -163,6 +169,8 @@
 			children = (
 				A95895ED1E90A95000376A87 /* UIViewController+SCPhotoAlert.h */,
 				A95895EE1E90A95000376A87 /* UIViewController+SCPhotoAlert.m */,
+				A92B6FC81EB59D4D008D09C3 /* UIColor+SCColor.h */,
+				A92B6FC91EB59D4D008D09C3 /* UIColor+SCColor.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -265,6 +273,8 @@
 				A96236FD1EAA992E009CEE98 /* Log In */,
 				A96236FE1EAA9A00009CEE98 /* SCSettingsTableViewController.h */,
 				A96236FF1EAA9A00009CEE98 /* SCSettingsTableViewController.m */,
+				A92B6FC51EB5942A008D09C3 /* SCMessagesViewController.h */,
+				A92B6FC61EB5942A008D09C3 /* SCMessagesViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -507,7 +517,9 @@
 				A95895E51E90979D00376A87 /* SCUser.m in Sources */,
 				A95895EB1E90A2DE00376A87 /* SCMessage.m in Sources */,
 				A96DB35B1E9074FF000DF63C /* SCConversationTableViewCell.m in Sources */,
+				A92B6FCA1EB59D4D008D09C3 /* UIColor+SCColor.m in Sources */,
 				A96348CF1EA504B6007A1EBA /* SCTabBarController.m in Sources */,
+				A92B6FC71EB5942A008D09C3 /* SCMessagesViewController.m in Sources */,
 				A9895A721E98BDC000F95318 /* SCPhoto.m in Sources */,
 				A96DB3481E8F6F2F000DF63C /* SCCreateProfileViewController.m in Sources */,
 				A95895E21E90978800376A87 /* SCArticle.m in Sources */,

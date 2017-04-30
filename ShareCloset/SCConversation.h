@@ -10,11 +10,13 @@
 
 @interface SCConversation : PFObject
 
-@property (nonatomic, strong) NSArray *messages;
+@property (nonatomic, strong) PFRelation *messages;
 
-@property (nonatomic, strong) NSString *mostRecentMessage;
-@property (nonatomic, strong) NSDate *mostRecentTimestamp;
+//participants relation is useful for querying a user's conversation with another
+@property (nonatomic, strong) PFRelation *participants;
 
-@property (nonatomic, strong) NSArray *participants;
+
+- (void)getMostRecentMessage:(PFObjectResultBlock)block;
+- (void)getOtherParticipant:(PFObjectResultBlock)block;
 
 @end

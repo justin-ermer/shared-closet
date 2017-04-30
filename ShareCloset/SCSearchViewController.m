@@ -39,7 +39,7 @@ static CGFloat DefaultRowHeight = 80.0f;
 
 - (void)updateArticles
 {
-    PFQuery *query = [PFQuery queryWithClassName:[SCArticle parseClassName]];
+    PFQuery *query = [SCArticle query];
     [query whereKeyExists:@"owner"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {

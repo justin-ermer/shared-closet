@@ -7,14 +7,12 @@
 //
 
 #import "SCConversation.h"
+#import "SCMessage.h"
+#import "SCUser.h"
 
 @implementation SCConversation
 
 @dynamic messages;
-
-@dynamic mostRecentMessage;
-@dynamic mostRecentTimestamp;
-
 @dynamic participants;
 
 + (void)load {
@@ -25,5 +23,23 @@
     return @"SCConversation";
 }
 
+- (void)getMostRecentMessage:(PFObjectResultBlock)block
+{
+    PFQuery *mostRecentQuery = [self.messages query];
+
+    [mostRecentQuery whereKey:@"recipient" equalTo:[SCUser currentUser]];
+    [mostRecentQuery orderBySortDescriptor:[NSSortDescriptor sortDescriptorWithKey:@"timestamp" ascending:NO]];
+    
+    [mostRecentQuery getFirstObjectInBackgroundWithBlock:block];
+}
+
+- (void)getOtherParticipant:(PFObjectResultBlock)block
+{
+    PFQuery *mostRecentQuery = [self.participants query];
+    
+    [mostRecentQuery whereKey:@"objectId" notEqualTo:[SCUser currentUser].objectId];
+    [mostRecentQuery getFirstObjectInBackgroundWithBlock:block];
+   
+}
 
 @end
