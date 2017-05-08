@@ -38,7 +38,7 @@
         if (!error)
         {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
-            [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+            [self dismissViewControllerAnimated:YES completion:nil];
         } else {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             [self showAlertWithTitle:@"Sign Up Error" message:[error userInfo][@"error"]];

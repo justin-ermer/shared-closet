@@ -10,6 +10,7 @@
 #import "SCArticleTableViewCell.h"
 #import "SCArticle.h"
 #import "SCUser.h"
+#import "SCArticleDetailViewController.h"
 
 @interface SCSearchViewController () 
 
@@ -79,18 +80,22 @@ static CGFloat DefaultRowHeight = 80.0f;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [self performSegueWithIdentifier:NSStringFromClass([SCArticleDetailViewController class]) sender:[self.articles objectAtIndex:indexPath.row]];
 }
 
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue destinationViewController] isKindOfClass:[SCArticleDetailViewController class]])
+    {
+        SCArticleDetailViewController *detailVC = (SCArticleDetailViewController*)[segue destinationViewController];
+        [detailVC setArticle:sender];
+    }
+
 }
-*/
+
 
 @end

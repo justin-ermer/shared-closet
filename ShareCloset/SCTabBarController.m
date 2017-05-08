@@ -9,6 +9,7 @@
 #import "SCTabBarController.h"
 #import "SCLoginViewController.h"
 #import <Parse/Parse.h>
+#import "SCUser.h"
 
 @interface SCTabBarController ()
 
@@ -20,18 +21,22 @@
     [super viewDidLoad];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
     
     [self checkUserState];
 }
 
 - (void)checkUserState
 {
-    if([PFUser currentUser] == nil)
+    if([SCUser currentUser] == nil)
     {
         [self performSegueWithIdentifier:NSStringFromClass([SCLoginViewController class]) sender:self];
+    }
+    else
+    {
+        [[SCUser currentUser] fetchInBackground];
     }
 }
 

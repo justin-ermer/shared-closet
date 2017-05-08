@@ -7,16 +7,20 @@
 //
 
 #import <Parse/Parse.h>
+@class SCUser;
 
-@interface SCConversation : PFObject
+@interface SCConversation : PFObject <PFSubclassing>
 
-@property (nonatomic, strong) PFRelation *messages;
+@property (nonatomic, strong, readonly) PFRelation *messages;
 
 //participants relation is useful for querying a user's conversation with another
-@property (nonatomic, strong) PFRelation *participants;
+@property (nonatomic, strong, readonly) PFRelation *participants;
 
 
 - (void)getMostRecentMessage:(PFObjectResultBlock)block;
 - (void)getOtherParticipant:(PFObjectResultBlock)block;
+- (void)getMessagesWithBlock:(PFArrayResultBlock)block;
+
++ (void)getConversationWithUser:(SCUser*)otherUser withBlock:(PFObjectResultBlock)block;
 
 @end

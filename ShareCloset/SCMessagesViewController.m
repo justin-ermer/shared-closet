@@ -26,6 +26,8 @@
 @property (strong, nonatomic) JSQMessagesAvatarImage *userAvatarImage;
 @property (strong, nonatomic) JSQMessagesAvatarImage *recipientAvatarImage;
 
+@property (nonatomic, assign) BOOL isSendingMessage;
+
 @end
 
 @implementation SCMessagesViewController
@@ -39,18 +41,63 @@
     
     self.incomingBubbleImageData = [bubbleFactory incomingMessagesBubbleImageWithColor:[UIColor jsq_messageBubbleGreenColor]];
     
-    self.userAvatarImage = [[JSQMessagesAvatarImage alloc]
-                            initWithAvatarImage:[UIImage imageWithData:[[[SCUser currentUser] profileImage] getDataInBackground].result]
-                            highlightedImage:[UIImage imageWithData:[[[SCUser currentUser] profileImage] getDataInBackground].result]
-                            placeholderImage:[UIImage imageNamed:@"logo"]];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    [[[SCUser currentUser] profileImage] getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
+        UIImage *avatarImage = [UIImage imageWithData:data];
+        
+        self.userAvatarImage = [[JSQMessagesAvatarImage alloc]
+                                     initWithAvatarImage:avatarImage
+                                     highlightedImage:avatarImage
+                                     placeholderImage:[UIImage imageNamed:@"logo"]];
+        
+        [self.collectionView reloadData];
+    }];
 
+    [self.recipientUser fetchInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
+        [self setTitle:[self.recipientUser name]];
+        
+        [[self.recipientUser profileImage] getDataInBackgroundWithBlock:^(NSData * _Nullable data, NSError * _Nullable error) {
+            UIImage *avatarImage = [UIImage imageWithData:data];
+            
+            self.recipientAvatarImage = [[JSQMessagesAvatarImage alloc]
+                                         initWithAvatarImage:avatarImage
+                                         highlightedImage:avatarImage
+                                         placeholderImage:[UIImage imageNamed:@"logo"]];
+            [self.collectionView reloadData];
+        }];
 
-    self.recipientAvatarImage = [[JSQMessagesAvatarImage alloc]
-                            initWithAvatarImage:[UIImage imageWithData:[[self.recipientUser profileImage] getDataInBackground].result]
-                            highlightedImage:[UIImage imageWithData:[[[SCUser currentUser] profileImage] getDataInBackground].result]
-                            placeholderImage:[UIImage imageNamed:@"logo"]];
+    }];
+    
 }
 
+
+- (void)setConversation:(SCConversation *)conversation
+{
+    _conversation = conversation;
+    
+    if(self.conversation && !self.messages)
+    {
+        PFQuery *messagesQuery = [[self.conversation messages] query];
+        [messagesQuery includeKey:@"sender"];
+        [messagesQuery includeKey:@"recipient"];
+
+        [messagesQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+            if(objects)
+            {
+                self.messages = objects;
+                [SCMessage fetchAllIfNeededInBackground:objects block:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+                
+                    [self.collectionView reloadData];
+                }];
+            }
+            else
+            {
+                self.messages = @[];
+            }
+        }];
+    }
+}
 
 #pragma mark - JSQMessagesCollectionViewDataSource
 
@@ -101,6 +148,12 @@
     }
 }
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    if([self.messages count] > 0 && [self.navigationItem.title isEqualToString:NSLocalizedString(@"Compose Message", nil)])[self.navigationItem setTitle:[[self.recipientUser name] capitalizedString]];
+    
+    return [self.messages count];
+}
 
 #pragma - mark JSQMessagesCollectionViewCellDelegate
 
@@ -124,21 +177,30 @@
 - (void)didPressSendButton:(UIButton *)button withMessageText:(NSString *)text senderId:(NSString *)senderId senderDisplayName:(NSString *)senderDisplayName date:(NSDate *)date
 {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [SCMessage createMessage:text toUser:self.recipientUser withConversation:self.conversation
-                 resultBlock:^(SCMessage * _Nullable newMessage, SCConversation * _Nullable newConversation, NSError * _Nullable error) {
-                     [MBProgressHUD hideHUDForView:self.view animated:YES];
-                     if(newMessage)
-                     {
-                         self.messages = [self.messages arrayByAddingObject:newMessage];
-                         self.conversation = newConversation;
-                         [[self collectionView] reloadData];
+    
+    if(!self.isSendingMessage)
+    {
+        self.isSendingMessage = YES;
+        [SCMessage createMessage:text toUser:self.recipientUser withConversation:self.conversation
+                     resultBlock:^(SCMessage * _Nullable newMessage, SCConversation * _Nullable newConversation, NSError * _Nullable error) {
+                         [MBProgressHUD hideHUDForView:self.view animated:YES];
+                         self.isSendingMessage = NO;
+                         
+                         if(newMessage)
+                         {
+                             [self finishSendingMessageAnimated:YES];
+                             self.messages = [self.messages arrayByAddingObject:newMessage];
+                             self.conversation = newConversation;
+                             
+                             [[self collectionView] reloadData];
+                         }
+                         else
+                         {
+                             //didnt go through
+                         }
                      }
-                     else
-                     {
-                         //didnt go through
-                     }
-                 }
-    ];
+         ];
+    }
 }
 
 /*

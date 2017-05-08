@@ -21,9 +21,7 @@
 
 @implementation SCLoginViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
+
 
 - (IBAction)didTapLogin:(id)sender
 {

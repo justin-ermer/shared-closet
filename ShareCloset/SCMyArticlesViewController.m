@@ -9,6 +9,9 @@
 #import "SCMyArticlesViewController.h"
 #import "SCCreateArticleViewController.h"
 #import <Parse/Parse.h>
+#import "SCArticle.h"
+
+//TODO improve derivative behvaior with myclosetvc vs searchvc
 
 @interface SCMyArticlesViewController ()
 
@@ -37,6 +40,24 @@
             [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.selectedRow.integerValue inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
         }];
     }
+}
+
+- (void)updateArticles
+{
+    PFQuery *query = [SCArticle query];
+    [query whereKey:@"owner" equalTo:[SCUser currentUser]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.articles = objects;
+            [self.tableView reloadData];
+        } else {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        
+        [self.tableView.refreshControl endRefreshing];
+    }];
+    
 }
 
 - (void) addArticlePressed

@@ -26,8 +26,9 @@
 - (void)getMostRecentMessage:(PFObjectResultBlock)block
 {
     PFQuery *mostRecentQuery = [self.messages query];
+    [mostRecentQuery includeKey:@"sender"];
+    [mostRecentQuery includeKey:@"recipient"];
 
-    [mostRecentQuery whereKey:@"recipient" equalTo:[SCUser currentUser]];
     [mostRecentQuery orderBySortDescriptor:[NSSortDescriptor sortDescriptorWithKey:@"timestamp" ascending:NO]];
     
     [mostRecentQuery getFirstObjectInBackgroundWithBlock:block];
@@ -39,7 +40,23 @@
     
     [mostRecentQuery whereKey:@"objectId" notEqualTo:[SCUser currentUser].objectId];
     [mostRecentQuery getFirstObjectInBackgroundWithBlock:block];
-   
+}
+
++ (void)getConversationWithUser:(SCUser*)otherUser withBlock:(PFObjectResultBlock)block
+{
+    PFQuery *convoQuery = [SCConversation query];
+    
+    [convoQuery whereKey:@"participants" containedIn:@[[SCUser currentUser], otherUser]];
+    [convoQuery getFirstObjectInBackgroundWithBlock:block];
+
+}
+
+- (void)getMessagesWithBlock:(PFArrayResultBlock)block
+{
+    PFQuery *messagesQuery = [self.messages query];
+    
+    [messagesQuery includeKeys:@[@"recipient", @"sender"]];
+    [messagesQuery findObjectsInBackgroundWithBlock:block];
 }
 
 @end

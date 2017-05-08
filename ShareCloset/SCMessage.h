@@ -11,7 +11,7 @@
 #import "SCConversation.h"
 #import <JSQMessagesViewController/JSQMessageData.h>
 
-@interface SCMessage : PFObject <JSQMessageData>
+@interface SCMessage : PFObject <PFSubclassing, JSQMessageData>
 
 NS_ASSUME_NONNULL_BEGIN
 

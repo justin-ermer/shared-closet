@@ -27,7 +27,6 @@
 
 - (void)configureWithConversation:(SCConversation*)conversation
 {
-    [conversation fetchIfNeededInBackground];
     [conversation getMostRecentMessage:^(PFObject * _Nullable object, NSError * _Nullable error) {
         SCMessage *mostRecentMessage = (SCMessage*)object;
         
@@ -35,6 +34,7 @@
         
         [mostRecentMessage.sender fetchIfNeededInBackgroundWithBlock:^(PFObject * _Nullable object, NSError * _Nullable error) {
             [self.avatarImageView setFile:mostRecentMessage.sender.profileImage];
+            [self.avatarImageView loadInBackground];
         }];
         
         [self.nameLabel setText:mostRecentMessage.sender.name];

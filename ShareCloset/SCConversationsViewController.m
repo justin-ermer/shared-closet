@@ -36,15 +36,16 @@
     
     [self.tableView setRefreshControl:pullToRefresh];
 
+    [self updateConversations];
 }
 
 - (void)updateConversations
 {
-    PFQuery *query = [SCConversation query];
-    [query whereKey:@"sender" equalTo:[SCUser currentUser]];
-    [query whereKey:@"recipient" equalTo:[SCUser currentUser]];
+    PFQuery *convoQuery = [SCConversation query];
+    [convoQuery whereKey:@"participants" containedIn:@[[SCUser currentUser]]];
+    [convoQuery includeKey:@"participants"];
     
-    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+    [convoQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         [self.tableView.refreshControl endRefreshing];
 
         if(!error)
@@ -66,10 +67,9 @@
     if([[segue destinationViewController] isKindOfClass:[SCMessagesViewController class]])
     {
         SCMessagesViewController *messagesVC = (SCMessagesViewController*)[segue destinationViewController];
-        messagesVC.conversation = sender;
-        [messagesVC.conversation getOtherParticipant:^(PFObject * _Nullable object, NSError * _Nullable error) {
-            if(object && [object isKindOfClass:[SCUser class]] && !error) messagesVC.recipientUser = (SCUser*)object;
-        }];
+        messagesVC.recipientUser = sender;
+        messagesVC.conversation = [self.conversations objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+        
     }
 }
 
@@ -77,7 +77,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:NSStringFromClass([SCMessagesViewController class]) sender:[self.conversations objectAtIndex:indexPath.row]];
+    [[self.conversations objectAtIndex:indexPath.row] getOtherParticipant:^(PFObject * _Nullable object, NSError * _Nullable error)
+     {
+         if(object && [object isKindOfClass:[SCUser class]] && !error)
+         {
+             [self performSegueWithIdentifier:NSStringFromClass([SCMessagesViewController class]) sender:object];
+         }
+     }];
 }
 
 #pragma - mark UITableViewDataSource

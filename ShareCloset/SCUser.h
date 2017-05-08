@@ -7,6 +7,7 @@
 //
 
 #import <Parse/Parse.h>
+#import <JSQMessagesViewController/JSQMessageAvatarImageDataSource.h>
 
 @interface SCUser : PFUser
 
@@ -14,6 +15,5 @@
 @property (nonatomic, strong) NSString *name;
 
 @property (nonatomic, strong, readonly) PFRelation *articles;
-
 
 @end
